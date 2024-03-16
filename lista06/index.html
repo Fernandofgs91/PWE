@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="pt-br">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Tabela, html, css, lista-06">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página com tabela.">
+    <meta name="author" content="Fernando Guimaraes Silva">
+    <title>Tabela</title>
+
     <style>
         table,
         th,
@@ -10,58 +17,58 @@
             border-collapse: collapse;
             padding: 6px;
         }
+
+        .tc {
+            text-align: center;
+        }
     </style>
 </head>
-  
+
 <body>
-  
 
-    </h1>
-      
-    <h2>Tabela HTML</h2>
+    <h2 style="text-align: center;">Tabela HTML</h2>
 
-<div style="display: flex; justify-content: center;">  
+
     <table align="center">
         <tr>
             <th>Nome do funcionário</th>
             <th>Sexo</th>
-             <th>Idade</th>
-             <th>Salário</th>
-        
+            <th>Idade</th>
+            <th>Salário</th>
+
         </tr>
         <tr>
             <td>Maria José</td>
             <td rowspan="2">Feminino</td>
-   			<td>14</td>
-            <td>R$1.500,00</td>
-           
+            <td class="tc">14</td>
+            <td class="tc">R$1.500,00</td>
+
         </tr>
         <tr>
             <td>Ana Clara</td>
-            <td>25</td>
-            <td>R$3.000,00</td>
+            <td class="tc">25</td>
+            <td class="tc">R$3.000,00</td>
         </tr>
-        
+
         <tr>
-          <td>João Márcio</td>
-           <td rowspan="2">Masculino</td> 
-           <td>74</td>
-           <td>R$5.000,00</td>
+            <td>João Márcio</td>
+            <td rowspan="2">Masculino</td>
+            <td class="tc">74</td>
+            <td class="tc">R$5.000,00</td>
         </tr>
-        
-         <tr>
-          <td>Robson Crusoé</td>
-            <td>55</td>
-             <td>R$8.000,00</td>
+
+        <tr>
+            <td>Robson Crusoé</td>
+            <td class="tc">55</td>
+            <td class="tc">R$8.000,00</td>
         </tr>
-        
-           <tr style="text-align: right; font-weight: bold;">
-          <td colspan="3"; text-align: right;
-  font-weight: bold;>Média de salário</td>
+
+        <tr style="text-align: right; font-weight: bold;">
+            <td colspan="3" ; text-align: right; font-weight: bold;>Média de salário</td>
             <td>R$4.375,00</td>
         </tr>
-        </div>
+
     </table>
 </body>
-  
+
 </html>
