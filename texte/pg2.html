@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Tabela, html, css, lista-06">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página com tabela.">
+    <meta name="author" content="Fernando Guimaraes Silva">
+    <title>Tabela</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+            width:600px
+        }
+
+        .tc {
+            text-align: center;
+        }
+
+        .estilo-imagem {
+    width: 300px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid black; /* Adiciona uma borda preta de 2 pixels */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+    /* Outros estilos conforme necessário */
+}
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align: center;">Tabela HTML</h2>
+
+
+    <table align="center">
+        <tr>
+            <th>Nome do funcionário</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Salário</th>
+
+        </tr>
+        <tr>
+            <td>Maria José</td>
+            <td rowspan="2">Feminino</td>
+            <td class="tc">14</td>
+            <td class="tc">R$1.500,00</td>
+
+        </tr>
+        <tr>
+            <td>Ana Clara</td>
+            <td class="tc">25</td>
+            <td class="tc">R$3.000,00</td>
+        </tr>
+
+        <tr>
+            <td>João Márcio</td>
+            <td rowspan="2">Masculino</td>
+            <td class="tc">74</td>
+            <td class="tc">R$5.000,00</td>
+        </tr>
+
+        <tr>
+            <td>Robson Crusoé</td>
+            <td class="tc">55</td>
+            <td class="tc">R$8.000,00</td>
+        </tr>
+
+        <tr style="text-align: right; font-weight: bold;">
+            <td colspan="3" ; text-align: right; font-weight: bold;>Média de salário</td>
+            <td>R$4.375,00</td>
+        </tr>
+
+    </table>
+<br>
+    <img src="uberlandia.jpg" alt="Descrição da Imagem" class="estilo-imagem">
+    <p><span style="color: rgb(206, 12, 57); font-weight: bold; ">A</span> <I style="color: rgba(22, 7, 235, 0.946);">escola </I><strong>é um lugar muito bom.</strong></p>
+</body>
+
+</html>
