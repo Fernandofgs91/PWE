@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Formulario, Cadastro, Dados, números">
-  <meta name="description" content="Cadastro de formulario com informações pessoais..">
+  <meta name="description" content="Cadastro de formulario,com informações pessoais..">
   <meta name="author" content="Fernando Guimaraes Silva">
   <meta name="robots" content="index, follow">
 
@@ -95,7 +95,8 @@
 
         <legend>Dados pessoais</legend>
         <label for="nome" class="required">Nome:</label>
-        <input type="text" id="nome" name="nome" required placeholder="Informe seu nome completo.">
+        <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-Üá-ü ]{3,50}" required
+          placeholder="Informe seu nome completo.">
         <label for="dataNascimento" class="required">Data de Nascimento:</label>
         <input type="date" id="dataNascimento" name="dataNascimento" required>
         <label for="sexo" class="required">Sexo:</label>
@@ -107,11 +108,10 @@
   <div class="container">
     <fieldset>
       <legend>Informações de contato.</legend>
-      <label for="email" class="required">Email:</label>
+      <label for="email" class="required">E-mail:</label>
       <input type="email" id="email" name="email" required placeholder="Infome seu e-mail aqui">
       <label for="telefone" class="required">Telefone Celular:</label>
-      <input type="tel" id="fone" name="fone" required pattern="[0-9]{2}[0-9]{5}[0-9]{4}"
-        placeholder="3498884512">
+      <input type="tel" id="fone" name="fone" required pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="3498884512">
       <label for="website">Website Pessoal:</label>
       <input type="text" id="website" name="website" placeholder="Informe o endereço de seu site aqui.">
   </div>
