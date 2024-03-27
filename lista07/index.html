@@ -132,7 +132,7 @@
       <label for="numero" class="required">Número:</label>
       <input type="number" id="numero" name="numero" min="1" max="9999" required placeholder="Nº entre 1 a 9999 .">
       <label for="cidade" class="required">Cidade:</label>
-      <input type="text" id="cidade" name="cidade" required placeholder="informe o nome de sua cidade.">
+      <input type="text" id="cidade" name="cidade" pattern="[A-Za-zÀ-Üá-ü ]{3,50}" required placeholder="informe o nome de sua cidade.">
       <label for="estado" class="required">Estado:</label>
       <select id="estado" name="estado" required>
         <option value="" disabled selected>Selecione o estado</option>
