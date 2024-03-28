@@ -8,8 +8,6 @@
   <meta name="description" content="Cadastro de formulario,com informações pessoais..">
   <meta name="author" content="Fernando Guimaraes Silva">
   <meta name="robots" content="index, follow">
-
-
   <title>Cadastro de Clientes</title>
   <style>
     body {
@@ -84,15 +82,12 @@
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
     <h1>Cadastro de Clientes</h1>
     <p style="color: red;">Todos os campos são de preenchimento obrigatório</p>
-    <form id="cadastroForm" action="#" method="post">
+    <form>
       <fieldset>
-
         <legend>Dados pessoais</legend>
         <label for="nome" class="required">Nome:</label>
         <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-Üá-ü ]{3,50}" required
@@ -100,14 +95,12 @@
         <label for="dataNascimento" class="required">Data de Nascimento:</label>
         <input type="date" id="dataNascimento" name="dataNascimento" required>
         <label>
-          <labe lclass="required" >Sexo:</label>
+          <label class="required" >Sexo:</label>
           <input type="radio" required name="sexo" value="masculino"> Masculino
         </label>
         <label>
           <input type="radio" required name="sexo" value="feminino"> Feminino
         </label>
-
-
         </select>
   </div>
   </fieldset>
@@ -122,7 +115,6 @@
       <label for="website" class="required">Website Pessoal:</label>
       <input type="text" id="website" name="website" required placeholder="Infome a url de seu Website">
     </fieldset>
-
   </div>
   <div class="container">
     <fieldset>
@@ -164,17 +156,11 @@
         <option value="SE">Sergipe</option>
         <option value="TO">Tocantins</option>
       </select>
-
       <input type="submit" value="Cadastrar">
       <input type="reset" value="Limpar">
       </form>
-
     </fieldset>
   </div>
-
-
   </div>
-
 </body>
-
 </html>
