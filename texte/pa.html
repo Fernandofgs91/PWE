@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Formulario, Cadastro, Dados, números">
+  <meta name="description" content="Cadastro de formulario, com informações pessoais.">
+  <meta name="author" content="Fernando Guimaraes Silva">
+  <meta name="robots" content="index, follow">
+  <title>Cadastro de Clientes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .required::before {
+      content: '*';
+      color: red;
+      margin-right: 5px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select {
+      width: calc(100% - 12px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="date"] {
+      width: calc(100% - 12px);
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+
+    .group-label {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cadastro de Clientes</h1>
+    <p style="color: red;">Todos os campos são de preenchimento obrigatório</p>
+    <form>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="nome" class="required">Nome:</label>
+        <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-Üá-ü ]{3,50}" required placeholder="Informe seu nome completo.">
+        <label for="dataNascimento" class="required">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required>
+        <label class="group-label required">Sexo:</label>
+        <label>
+          <input type="radio" required name="sexo" value="masculino"> Masculino
+        </label>
+        <label>
+          <input type="radio" required name="sexo" value="feminino"> Feminino
+        </label>
+      </fieldset>
+  </div>
+  <div class="container">
+    <fieldset>
+      <legend>Informações de contato</legend>
+      <label for="email" class="required">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Informe seu email aqui">
+      <label for="fone" class="required">Telefone Celular:</label>
+      <input type="tel" id="fone" name="fone" class="required" pattern="[0-9]{9}" required placeholder="Apenas números máx 9 ">
+      <label for="website" class="required">Website Pessoal:</label>
+      <input type="text" id="website" name="website" required placeholder="Informe a URL de seu Website">
+    </fieldset>
+  </div>
+  <div class="container">
+    <fieldset>
+      <legend>Localização</legend>
+      <label for="endereco" class="required">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required placeholder="Informe o nome de sua rua.">
+      <label for="numero" class="required">Número:</label>
+      <input type="number" id="numero" name="numero" min="1" max="9999" required placeholder="Nº entre 1 a 9999 .">
+      <label for="cidade" class="required">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" pattern="[A-Za-zÀ-Üá-ü ]{3,50}" required placeholder="Informe o nome de sua cidade.">
+      <label for="estado" class="required">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="" disabled selected>Selecione o estado</option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
+      <input type="submit" value="Cadastrar">
+      <input type="reset" value="Limpar">
+    </fieldset>
+  </div>
+  </form>
+</body>
+
+</html>

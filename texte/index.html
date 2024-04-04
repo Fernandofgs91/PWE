@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+
+    <style>
+        .container {
+            display: flex;
+            /* Utiliza flexbox para o layout */
+            justify-content:left;
+            /* Centraliza os itens horizontalmente */
+        }
+
+        .item {
+            text-align: center;
+            /* Centraliza o texto */
+            margin: 0 10px;
+            /* Espaço entre as imagens */
+        }
+
+        .item img {
+            width: 600px;
+            /* Largura das imagens (ajuste conforme necessário) */
+            height: auto;
+            /* Altura ajustável de acordo com a largura */
+        }
+
+        .item p {
+            margin-top: 5px;
+            /* Espaço entre a imagem e a legenda */
+        }
+    </style>
+
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto de uberlandia</title>
 </head>
 
-<body background="">
+<body background="  ">
     <img src="uberlandia.jpg" alt="foto de uberlandia" width="600">
     <br>
-    <img src="uberlandia_resized.jpg" alt="foto de" width="600">
+    <hr>
+    <div class="container">
+        <div class="item">
+          <img src="uberlandia_resized.jpg " alt="Descrição da imagem 1">
+          <p>Foto de uberlandia 1</p>
+        </div>
+        <div class="item">
+          <img src="uberlandia.jpg" alt="Descrição da imagem 2">
+          <p>Foto de uberlandia 2</p>
+        </div>
+      </div>
+    <hr>
 
     <h2>Lista Ordenada:</h2>
     <ol>
@@ -30,96 +73,89 @@
 
     <br>
 
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tabela HTML</title>
-        <style>
-            table {
-                border-collapse: collapse;
-                width: 100%;
-            }
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
 
-            th,
-            td {
-                border: 1px solid black;
-                padding: 8px;
-                text-align: center;
-            }
-        </style>
+    th,
+    td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    }
+    </style>
     </head>
 
     <body>
+        <details>
+            <summary>Tabela</summary>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="1">2 Linhas, em uma Coluna </td>
+                        <td>Linha 1, Coluna 3</td>
+                    </tr>
+                    <tr>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Coluna 1</th>
-                    <th>Coluna 2</th>
-                    <th>Coluna 3</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="1">2 Linhas, em uma Coluna </td>
-                    <td>Linha 1, Coluna 3</td>
-                </tr>
-                <tr>
-                    
-                    <td>Linha 2, Coluna 2</td>
-                    <td>Linha 2, Coluna 3</td>
-                </tr>
-                <tr>
-                    <td>Linha 3, Coluna 1</td>
-                    <td>Linha 3, Coluna 2</td>
-                    <td>Linha 3, Coluna 3</td>
-                </tr>
-                <tr>
-                    <td>Linha 4, Coluna 1</td>
-                    <td>Linha 4, Coluna 2</td>
-                    <td>Linha 4, Coluna 3</td>
-                </tr>
-                <tr>
-                    <td>Linha 5, Coluna 1</td>
-                    <td>Linha 5, Coluna 2</td>
-                    <td>Linha 5, Coluna 3</td>
-                </tr>
-                <tr>
-                    <td>Linha 6, Coluna 1</td>
-                    <td>Linha 6, Coluna 2</td>
-                    <td>Linha 6, Coluna 3</td>
-                </tr>
-            </tbody>
-        </table>
+                        <td>Linha 2, Coluna 2</td>
+                        <td>Linha 2, Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Linha 3, Coluna 1</td>
+                        <td>Linha 3, Coluna 2</td>
+                        <td>Linha 3, Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Linha 4, Coluna 1</td>
+                        <td>Linha 4, Coluna 2</td>
+                        <td>Linha 4, Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Linha 5, Coluna 1</td>
+                        <td>Linha 5, Coluna 2</td>
+                        <td>Linha 5, Coluna 3</td>
+                    </tr>
+                    <tr>
+                        <td>Linha 6, Coluna 1</td>
+                        <td>Linha 6, Coluna 2</td>
+                        <td>Linha 6, Coluna 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </details>
         <br>
+        <details>
+            <summary>Tabela</summary>
+            <table border="1">
+                <tr>
+                    <td rowspan="2">AC</td>
+                    <td>B</td>
 
-        <table border="1">
-            <tr>
-                <td rowspan="2">AC</td>
-                <td>B</td>
-    
-    
-            </tr>
-            <!--td>C</td-->
-            <td>D</td>
-            <tr>
-            </tr>
-            <td>E</td>
-            <td>F</td>
-            <tr>
-            </tr>
-    
-        </table>
+
+                </tr>
+                <!--td>C</td-->
+                <td>D</td>
+                <tr>
+                </tr>
+                <td>E</td>
+                <td>F</td>
+                <tr>
+                </tr>
+
+            </table>
+        </details>
+
+
+
     </body>
-
-    </html>
-
-
-
-
-</body>
 
 </html>
