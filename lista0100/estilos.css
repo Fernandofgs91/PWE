@@ -14,3 +14,38 @@
     width: 50%;
     margin: 0 auto;
 }
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 6px;
+}
+
+.tc {
+    text-align: center;
+}
+
+.meu-div {
+    background-color: #CAF3FF;
+    border-left: 10px solid #FF3300;
+    border-right: 10px solid #FF3300;
+    padding: 20px;
+    margin: 0 50px;
+    /* 0 para o topo e a base, 50px para a direita e esquerda */
+}
+
+
+.titulo-h {
+    font-size: 30px;
+    border-bottom: 1px solid #FF3300;
+    color: black;
+}
+
+/* Estilos para a tag <p> */
+.pa {
+    line-height: 2;
+    font-size: 14px;
+    color: black;
+}
