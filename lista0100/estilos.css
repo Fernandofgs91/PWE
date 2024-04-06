@@ -1,0 +1,19 @@
+h1,
+h2,
+p,
+strong {
+    background-color: yellow;
+    color: red;
+}
+
+
+.caixa {
+    border-style: solid;
+    border-style: dashed;
+    border-color: blue;
+    text-align: center;
+    color: red;
+    border-width: 3px 3ed;
+    width: 50%;
+    margin: 0 auto;
+}
