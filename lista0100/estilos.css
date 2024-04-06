@@ -1,7 +1,4 @@
-h1,
-h2,
-p,
-strong {
+.minha-classe {
     background-color: yellow;
     color: red;
 }
