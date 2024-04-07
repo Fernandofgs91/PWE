@@ -42,6 +42,8 @@ td {
     font-style: italic;
     font-family: tahoma;
     text-align: center;
+    padding: 20px;
+    margin: 0 50px;
 }
 .tc {
     text-align: center;
