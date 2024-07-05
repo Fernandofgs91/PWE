@@ -1,0 +1,357 @@
+/* Reset básico: Remove margens e preenchimentos padrão, define box-sizing como border-box para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte padrão */
+    background-color: #f4f4f4;
+    /* Define a cor de fundo */
+    color: #333;
+    /* Define a cor do texto */
+    line-height: 1.6;
+    /* Define a altura da linha */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    /* Cor de fundo do cabeçalho */
+    color: #fff;
+    /* Cor do texto no cabeçalho */
+    padding: 1rem;
+    /* Preenchimento interno */
+    position: relative;
+    /* Permite posicionar elementos filhos de forma absoluta */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+header h1 {
+    margin: 0;
+    /* Remove margem do título */
+}
+
+/* Estilos para o botão de alternar menu (visível em telas menores) */
+.menu-toggle {
+    display: none;
+    /* Inicialmente escondido */
+    font-size: 2rem;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Aparece como ponteiro ao passar o mouse */
+    position: absolute;
+    /* Posicionamento absoluto */
+    top: 1rem;
+    /* Distância do topo */
+    right: 1rem;
+    /* Distância da direita */
+    color: #fff;
+    /* Cor do texto */
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none;
+    /* Remove marcações da lista */
+    display: flex;
+    /* Exibe itens em linha */
+    justify-content: center;
+    /* Centraliza os itens */
+}
+
+nav ul li {
+    margin: 0 1rem;
+    /* Espaçamento horizontal entre itens */
+}
+
+nav ul li a {
+    color: #fff;
+    /* Cor do link */
+    text-decoration: none;
+    /* Remove sublinhado */
+    padding: 0.5rem;
+    /* Preenchimento interno */
+    transition: background-color 0.3s, color 0.3s;
+    /* Animação de transição */
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    /* Cor de fundo ao passar o mouse */
+    color: #333;
+    /* Cor do texto ao passar o mouse */
+}
+
+/* Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        /* Exibe itens em coluna */
+        display: none;
+        /* Inicialmente escondido */
+        width: 100%;
+        /* Largura total */
+        text-align: center;
+        /* Centraliza o texto */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+        /* Espaçamento vertical entre itens */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Exibe o botão de alternar menu */
+    }
+
+    .nav-active {
+        display: flex;
+        /* Exibe o menu ao clicar no botão de alternar */
+    }
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 2rem;
+    /* Preenchimento interno */
+}
+
+/* Estilos para seções de introdução, destaques e resenhas */
+.intro,
+.featured,
+.reviews {
+    margin-bottom: 2rem;
+    /* Margem inferior */
+    text-align: justify;
+    /* Texto justificado */
+}
+
+/* Estilos para seções em coluna */
+.column-section {
+    display: flex;
+    /* Exibe itens em linha */
+    justify-content: space-between;
+    /* Espaçamento entre itens */
+    flex-wrap: wrap;
+    /* Quebra linha quando necessário */
+}
+
+.column {
+    flex: 1;
+    /* Flexibilidade dos itens */
+    margin: 1rem;
+    /* Margem ao redor */
+    text-align: center;
+    /* Texto centralizado */
+}
+
+/* Estilos para imagens */
+.photo {
+    width: 300px;
+    /* Largura fixa */
+    border: 2px solid #333;
+    /* Borda ao redor */
+    margin-bottom: 1rem;
+    /* Margem inferior */
+}
+
+/* Efeito de zoom nas imagens */
+.zoom-effect {
+    transition: transform 0.3s;
+    /* Animação de transformação */
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+    /* Aumenta a escala ao passar o mouse */
+}
+
+/* Estilos para categorias */
+.category {
+    margin-bottom: 2rem;
+    /* Margem inferior */
+}
+
+.category h2 {
+    margin-bottom: 1rem;
+    /* Margem inferior */
+}
+
+/* Estilos para grade de filmes */
+.movie-grid {
+    display: flex;
+    /* Exibe itens em linha */
+    flex-wrap: wrap;
+    /* Quebra linha quando necessário */
+    gap: 1rem;
+    /* Espaçamento entre itens */
+}
+
+.movie {
+    background-color: #fff;
+    /* Cor de fundo */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra ao redor */
+    overflow: hidden;
+    /* Esconde transbordamento */
+    flex: 1 1 calc(33% - 1rem);
+    /* Flexibilidade dos itens */
+    text-align: center;
+    /* Texto centralizado */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Animação de transformação e sombra */
+    padding: 30px 20px;
+    /* Preenchimento interno */
+}
+
+.movie img {
+    width: 60%;
+    /* Largura da imagem */
+    height: auto;
+    /* Altura automática */
+    transition: transform 0.3s;
+    /* Animação de transformação */
+    border: 2px solid black;
+    /* Borda da imagem */
+}
+
+.movie h3 {
+    margin: 1rem 0;
+    /* Margem ao redor */
+}
+
+.movie p {
+    padding: 0 1rem 1rem 1rem;
+    /* Preenchimento interno */
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    /* Aumenta a escala ao passar o mouse */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Sombra aumentada ao passar o mouse */
+}
+
+.movie:hover img {
+    transform: scale(1.1);
+    /* Aumenta a escala da imagem ao passar o mouse */
+}
+
+/* Estilos para formulário de contato */
+.contact-form {
+    max-width: 600px;
+    /* Largura máxima */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    padding: 1rem;
+    /* Preenchimento interno */
+    background-color: #fff;
+    /* Cor de fundo */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra ao redor */
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    /* Margem inferior */
+}
+
+.form-group label {
+    display: block;
+    /* Exibe como bloco */
+    margin-bottom: 0.5rem;
+    /* Margem inferior */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    /* Largura total */
+    padding: 0.5rem;
+    /* Preenchimento interno */
+    border: 1px solid #ccc;
+    /* Borda */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* Animação de borda e sombra */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #333;
+    /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* Sombra ao focar */
+}
+
+/* Estilos para botões de envio e reset */
+button[type="submit"],
+button[type="reset"] {
+    display: inline-block;
+    /* Exibe como bloco em linha */
+    width: 48%;
+    /* Largura */
+    padding: 0.75rem;
+    /* Preenchimento interno */
+    background-color: #333;
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    border: none;
+    /* Sem borda */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Aparece como ponteiro ao passar o mouse */
+    transition: background-color 0.3s;
+    /* Animação de cor de fundo */
+    margin-top: 1rem;
+    /* Margem superior */
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #555;
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #000;
+    /* Cor de fundo */
+    color: #fff;
+    /* Cor do texto */
+    text-align: center;
+    /* Texto centralizado */
+    padding: 1rem 0;
+    /* Preenchimento interno */
+}
+
+footer p {
+    margin: 0;
+    /* Remove margem */
+    font-size: 0.9rem;
+    /* Tamanho da fonte */
+}
+
+.map-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#map {
+    height: 100px; /* Altura do mapa */
+    width: 100%; /* Largura do mapa */
+    border: 1px solid #ccc; /* Borda opcional para o mapa */
+}

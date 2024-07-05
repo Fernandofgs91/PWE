@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cinema XYZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="ingresso.html">Ingressos</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="series.html">Séries</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Contato</h1>
+            <p>Entre em contato conosco!</p>
+        </section>
+
+        <section class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+        <section>
+            <h1>Nossa localização</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.4898922427676!2d-48.280300446747084!3d-18.93318365808428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444e289e2274f%3A0xd113d0763464e390!2sR.%20Blanche%20Galassi%2C%20150%20-%20Morada%20da%20Colina%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038411-104!5e0!3m2!1spt-BR!2sbr!4v1719200884812!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:1;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Cinema FGS. Todos os direitos reservados.</p>
+        <img src="IMG/logosredes.png" width="300" alt="Logos Redes Sociais">
+        <p>Rua Blanche Galassi, 150 - Morada da Colina. Uberlândia (MG) - Brasil</p>
+        <p>55 (34)3221-4800</p>
+    </footer>
+</body>
+
+</html>

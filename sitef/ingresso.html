@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Ingressos de Cinema</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Ícone de menu (três linhas) -->
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="ingresso.html">Ingressos</a></li>
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a href="series.html">Séries</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Seleção de Filmes e Séries</h2>
+            <p>Preços dos ingressos:</p>
+            <ul>
+                <li>Inteira: R$30,00</li>
+                <li>Meia: R$15,00</li>
+            </ul>
+            <form id="schedule-form">
+                <div class="form-group">
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Selecione o filme ou a Série:</option>
+                        <!-- Grupos de opções de filmes/séries por categoria -->
+                        <optgroup label="Ação">
+                            <option value="O Resgate">O Resgate</option>
+                            <option value="Lágrimas do Sol">Lágrimas do Sol</option>
+                            <option value="Uncharted (Inexplorado)">Uncharted (Inexplorado)</option>
+                        </optgroup>
+                        <optgroup label="Comédia">
+                            <option value="Até que a Sorte nos Separe">Até que a Sorte nos Separe</option>
+                            <option value="O Meu Pai é um Perigo">O Meu Pai é um Perigo</option>
+                            <option value="Um Dia Cinco Estrelas">Um Dia Cinco Estrelas</option>
+                        </optgroup>
+                        <optgroup label="Drama">
+                            <option value="A Lista de Schindler">A Lista de Schindler</option>
+                            <option value="Forrest Gump">Forrest Gump</option>
+                            <option value="Cidade de Deus">Cidade de Deus</option>
+                        </optgroup>
+                        <optgroup label="Ficção Científica">
+                            <option value="Planeta dos Macacos: O Reinado">Planeta dos Macacos: O Reinado</option>
+                            <option value="O Astronauta">O Astronauta</option>
+                            <option value="Guerra Civil">Guerra Civil</option>
+                        </optgroup>
+                        <optgroup label="Séries">
+                            <option value="The Queen's Gambit (2020)">The Queen's Gambit (2020)</option>
+                            <option value="Squid Game (2021)">Squid Game (2021)</option>
+                            <option value="WandaVision (2021)">WandaVision (2021)</option>
+                            <option value="The Boys (2020-2024)">The Boys (2020-2024)</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="dataFilme">Data do Filme:</label>
+                    <input type="date" id="dataFilme" name="dataFilme" required>
+                    <!-- Campo de data para selecionar a data do filme -->
+
+                    <label for="horaFilme">Horário do Filme:</label>
+                    <input type="time" id="horaFilme" name="horaFilme" required>
+                    <!-- Campo de hora para selecionar o horário do filme -->
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade-inteira">Quantidade de Ingressos Inteira:</label>
+                    <input type="number" id="quantidade-inteira" name="quantidade-inteira" min="0" value="0" required>
+                    <!-- Campo numérico para quantidade de ingressos inteiros -->
+                </div>
+                <div class="form-group">
+                    <label for="quantidade-meia">Quantidade de Ingressos Meia:</label>
+                    <input type="number" id="quantidade-meia" name="quantidade-meia" min="0" value="0" required>
+                    <!-- Campo numérico para quantidade de ingressos meia -->
+                </div>
+            </form>
+            <div class="form-group">
+                <p>Total: R$<span id="total-value">0,00</span></p> <!-- Exibição do valor total -->
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Informações de Pagamento</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required> <!-- Campo para nome completo -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required> <!-- Campo para email -->
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required> <!-- Campo para telefone -->
+                </div>
+                <div class="form-group">
+                    <label for="payment">Método de Pagamento:</label>
+                    <select id="payment" name="payment" required>
+                        <!-- Opções de métodos de pagamento -->
+                        <option value="credit">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </div>
+                <div id="card-info">
+                    <!-- Campos para informações do cartão de crédito -->
+                    <div class="form-group">
+                        <label for="card">Número do Cartão:</label>
+                        <input type="text" id="card" name="card" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry">Data de Validade:</label>
+                        <input type="month" id="expiry" name="expiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvc">CVC:</label>
+                        <input type="text" id="cvc" name="cvc" required>
+                    </div>
+                </div>
+                <div id="pix-info" class="form-group" style="display:none;">
+                    <!-- Informações para pagamento via PIX (oculto por padrão) -->
+                    <img src="IMG/pix.png" alt="PIX" width="600">
+                </div>
+                <div id="boleto-info" class="form-group" style="display:none;">
+                    <!-- Informações para pagamento via boleto (oculto por padrão) -->
+                    <img src="IMG/boleto.png" alt="Boleto" width="600">
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="buy-button">Comprar Ingressos</button>
+                    <!-- Botão para comprar ingressos -->
+                </div>
+            </form>
+            <p id="success-message" style="display:none;">Ingressos comprados com sucesso</p>
+            <!-- Mensagem de sucesso oculta por padrão -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cinema FGS. Todos os direitos reservados.</p>
+        <img src="IMG/logosredes.png" width="300" alt="Logos Redes Sociais">
+        <p>Rua Blanche Galassi, 150 - Morada da Colina. Uberlândia (MG) - Brasil</p>
+        <p>55 (34)3221-4800</p>
+    </footer>
+
+    <script>
+        // JavaScript que será executado quando o conteúdo da página for carregado
+        document.addEventListener("DOMContentLoaded", function () {
+            const paymentSelect = document.getElementById("payment"); // Seleciona o campo de método de pagamento
+            const cardInfo = document.getElementById("card-info"); // Seleciona a div de informações do cartão
+            const pixInfo = document.getElementById("pix-info"); // Seleciona a div de informações do PIX
+            const boletoInfo = document.getElementById("boleto-info"); // Seleciona a div de informações do boleto
+            const paymentForm = document.getElementById("payment-form"); // Seleciona o formulário de pagamento
+            const successMessage = document.getElementById("success-message"); // Seleciona a mensagem de sucesso
+            const quantidadeInteiraInput = document.getElementById("quantidade-inteira");
+            const quantidadeMeiaInput = document.getElementById("quantidade-meia");
+            const totalValue = document.getElementById("total-value");
+
+            // Função para alternar a visibilidade dos campos de pagamento
+            function togglePaymentFields() {
+                const paymentValue = paymentSelect.value;
+                cardInfo.style.display = (paymentValue === "credit") ? "block" : "none";
+                pixInfo.style.display = (paymentValue === "pix") ? "block" : "none";
+                boletoInfo.style.display = (paymentValue === "boleto") ? "block" : "none";
+            }
+
+            // Função para calcular o valor total
+            function calculateTotal() {
+                const quantidadeInteira = parseInt(quantidadeInteiraInput.value, 10);
+                const quantidadeMeia = parseInt(quantidadeMeiaInput.value, 10);
+                const total = (quantidadeInteira * 30) + (quantidadeMeia * 15);
+                totalValue.textContent = total.toFixed(2); // Atualiza o valor total no HTML
+            }
+
+            paymentSelect.addEventListener("change", togglePaymentFields); // Adiciona evento de mudança no campo de pagamento
+            togglePaymentFields();  // Chamada inicial para configurar o estado correto
+
+            quantidadeInteiraInput.addEventListener("input", calculateTotal); // Adiciona evento para calcular o total quando a quantidade de ingressos inteiros mudar
+            quantidadeMeiaInput.addEventListener("input", calculateTotal); // Adiciona evento para calcular o total quando a quantidade de ingressos meia mudar
+            calculateTotal(); // Chamada inicial para calcular o total
+
+            paymentForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Previne o envio padrão do formulário
+                successMessage.style.display = "block"; // Exibe a mensagem de sucesso
+            });
+        });
+    </script>
+
+</body>
+
+</html>
