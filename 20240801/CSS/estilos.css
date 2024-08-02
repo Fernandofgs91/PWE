@@ -1,30 +1,36 @@
+/* Importa a fonte 'Press Start 2P' do Google Fonts para ser usada no documento */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* Define estilos para todos os elementos do documento */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; /* Define margem zero para todos os elementos */
+    padding: 0px; /* Define padding zero para todos os elementos */
 }
 
+/* Estilos para listas não ordenadas (ul) */
 ul {
-    list-style: none;
-    padding-left: 0px;
-    background-color: black;
+    list-style: none; /* Remove os marcadores de lista */
+    padding-left: 0px; /* Remove o padding à esquerda da lista */
+    background-color: black; /* Define o fundo da lista como preto */
 }
 
+/* Estilos para itens de lista (li) */
 li {
-    display: inline-block;
+    display: inline-block; /* Faz com que os itens de lista sejam exibidos em linha */
 }
 
+/* Estilos para links não visitados (a:link) e visitados (a:visited) */
 a:link,
 a:visited {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    font-family: "Press Start 2P", arial;
+    color: white; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px; /* Adiciona um padding interno de 10px nos links */
+    display: inline-block; /* Faz com que os links se comportem como blocos em linha */
+    font-family: "Press Start 2P", arial; /* Define a fonte dos links como 'Press Start 2P' ou fallback para Arial */
 }
 
+/* Estilos para links quando o usuário passa o mouse sobre eles (a:hover) */
 a:hover {
-    background-color: white;
-    color: black;
+    background-color: white; /* Define o fundo dos links como branco ao passar o mouse */
+    color: black; /* Define a cor do texto dos links como preto ao passar o mouse */
 }
