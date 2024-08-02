@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    background-color: black;
+}
+
+li {
+    display: inline-block;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-family: "Press Start 2P", arial;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
