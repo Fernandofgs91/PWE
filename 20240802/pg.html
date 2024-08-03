@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu com Imagens e Nomes</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+
+
+/* Define estilos para todos os elementos do documento */
+* {
+    margin: 0; /* Define margem zero para todos os elementos */
+    padding: 0; /* Define padding zero para todos os elementos */
+}
+
+/* Estilos para listas não ordenadas (ul) */
+ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding-left: 0; /* Remove o padding à esquerda da lista */
+    background-color: black; /* Define o fundo da lista como preto */
+    text-align: center; /* Centraliza o texto e os itens dentro da lista */
+    margin: 0 auto; /* Centraliza a lista horizontalmente na página */
+}
+
+/* Estilos para itens de lista (li) */
+li {
+    display: inline-block; /* Faz com que os itens de lista sejam exibidos em linha */
+  
+}
+
+/* Estilos para links (a) */
+a:link,a:visited {
+    color: white; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+    padding-top: 50px;
+}
+.opcaoMenu {
+
+
+width: 100px;
+
+
+
+background-repeat: no-repeat;
+
+
+background-position: center 10px;
+text-align: center;
+
+}
+.opcaoMenuFacebook{
+
+    background-image: url('imagens/faceBlack.png');
+}
+.opcaoMenuFacebook:hover{
+
+background-image: url('imagens/face.png');
+}
+.opcaoMenuInstagram{
+
+background-image: url('imagens/instaBlack.png');
+}
+.opcaoMenuInstagram:hover{
+
+background-image: url('imagens/Insta.png');
+}
+.opcaoMenuMaps{
+
+background-image: url('imagens/mapsBlack.png');
+}
+.opcaoMenuMaps:hover{
+
+background-image: url('imagens/maps.png');
+}
+.opcaoMenutwitter{
+
+background-image: url('imagens/twitterBlack.png');
+}
+.opcaoMenutwitter:hover{
+
+background-image: url('imagens/twitter.png');
+}
+.opcaoMenuYoutube{
+
+background-image: url('imagens/youtubeBlack.png');
+}
+.opcaoMenuYoutube:hover{
+
+background-image: url('imagens/youtube.png');
+}
+
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class='opcaoMenu opcaoMenuFacebook'> Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class='opcaoMenu opcaoMenuInstagram'> Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#" class='opcaoMenu opcaoMenuMaps'> Maps</a>
+                    </li>
+                    <li>
+                        <a href="#" class='opcaoMenu opcaoMenutwitter'> Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#" class='opcaoMenu opcaoMenuYoutube'> Youtube</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu com Imagens e Nomes</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+/* Define estilos para todos os elementos do documento */
+* {
+    margin: 0; /* Define margem zero para todos os elementos */
+    padding: 0; /* Define padding zero para todos os elementos */
+}
+
+/* Estilos para listas não ordenadas (ul) */
+ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding-left: 0; /* Remove o padding à esquerda da lista */
+    background-color: black; /* Define o fundo da lista como preto */
+    text-align: center; /* Centraliza o texto e os itens dentro da lista */
+    margin: 0 auto; /* Centraliza a lista horizontalmente na página */
+}
+
+/* Estilos para itens de lista (li) */
+li {
+    display: inline-block; /* Faz com que os itens de lista sejam exibidos em linha */
+    margin: 10px; /* Adiciona uma margem ao redor de cada item */
+}
+
+/* Estilos para links (a) */
+a {
+    color: white; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilos para o contêiner de imagem e nome */
+.menu-item {
+    display: block; /* Faz com que o contêiner seja um bloco */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    padding: 10px; /* Adiciona um padding ao redor do contêiner */
+}
+
+.menu-item img {
+    display: block; /* Faz com que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 100px; /* Define uma largura fixa para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave para a alteração de opacidade */
+}
+
+/* Altera a imagem ao passar o mouse */
+a:hover .menu-item img {
+    opacity: 0; /* Torna a imagem original invisível */
+}
+
+/* Altera a imagem de fundo ao passar o mouse */
+a:hover .menu-item {
+    background-image: url('imagens/faceBlack.png'); /* Define a nova imagem ao passar o mouse */
+}
+
+.menu-item span {
+    display: block; /* Faz com que o nome seja exibido em bloco */
+    color: white; /* Define a cor do texto como branco */
+    font-family: "Press Start 2P", Arial, sans-serif; /* Define a fonte do texto */
+    margin-top: 5px; /* Adiciona um espaço acima do nome */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a alteração da cor */
+}
+
+/* Estilos para links quando o usuário passa o mouse sobre eles (a:hover) */
+a:hover .menu-item span {
+    color: black; /* Define a cor do texto como preto ao passar o mouse */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <img src="imagens/face.png" alt="Facebook" class="menu-image">
+                            <span>Facebook</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <img src="imagens/insta.png" alt="Instagram" class="menu-image">
+                            <span>Instagram</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <img src="imagens/maps.png" alt="Maps" class="menu-image">
+                            <span>Maps</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <img src="imagens/twitter.png" alt="Twitter" class="menu-image">
+                            <span>Twitter</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu-item">
+                            <img src="imagens/youtube.png" alt="YouTube" class="menu-image">
+                            <span>YouTube</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
