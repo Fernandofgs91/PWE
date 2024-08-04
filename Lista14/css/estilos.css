@@ -1,0 +1,229 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: arial;
+    /* Define a fonte principal */
+    box-sizing: border-box;
+    /* Garante que a largura total inclua padding e bordas */
+    margin: 0px;
+    /* Remove margens padrão do corpo */
+    display: flex;
+    /* Define o layout do corpo como flexível para centralizar o contêiner */
+    flex-direction: column;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    text-align: right;
+    /* Alinha o texto à direita dentro do cabeçalho */
+}
+
+header h1,
+header h2 {
+    padding: 15px;
+    /* Adiciona padding interno aos elementos h1 e h2 no cabeçalho */
+    margin: 0px;
+    /* Remove margens padrão dos elementos h1 e h2 no cabeçalho */
+}
+
+/* Estilos específicos para h1 dentro do cabeçalho */
+header h1 {
+    color: white;
+    /* Cor do texto */
+    font-size: 35px;
+    /* Tamanho da fonte */
+    background-color: black;
+    /* Cor de fundo */
+}
+
+
+/* Estilos específicos para h2 dentro do cabeçalho */
+header h2 {
+    color: white;
+    /* Cor do texto */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    background-color: gray;
+    /* Cor de fundo */
+}
+
+
+    
+    /* Transforma o texto para maiúsculas ao passar o mouse */
+
+
+/* Estilos para h2 dentro do conteúdo principal */
+main h2 {
+    color: black;
+    /* Cor do texto */
+    transition: all 0.5s;
+    /* Transição suave de todas as propriedades */
+}
+
+/* Efeito de hover para h2 no conteúdo principal */
+main h2:hover {
+    letter-spacing: 5px;
+    /* Espaçamento entre letras ao passar o mouse */
+}
+
+/* Estilos para links */
+a:link,
+a:visited {
+    color: blue;
+    /* Cor dos links não visitados e visitados */
+}
+
+/* Estilos para a navegação */
+nav ul {
+    padding: 0px;
+    /* Remove o padding padrão da lista não ordenada dentro da navegação */
+}
+
+nav ul li {
+    list-style: none;
+    /* Remove os marcadores de lista */
+    padding: 10px;
+    /* Adiciona padding aos itens da lista */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+
+/* Estilos específicos para a navegação dentro do cabeçalho */
+header nav ul {
+    margin: 0px;
+    /* Remove margens padrão da lista não ordenada dentro da navegação */
+    display: flex;
+    /* Usa flexbox para layout */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    background-color: rgb(123, 123, 250);
+    /* Cor de fundo */
+}
+
+header nav ul li {
+    display: inline-block;
+    /* Exibe os itens da lista como blocos inline */
+}
+
+header nav ul li a:link,
+header nav ul li a:visited {
+    color: white;
+    /* Cor do texto dos links */
+    padding: 0px 30px;
+    /* Espaçamento interno dos links */
+    font-weight: normal;
+    /* Peso da fonte normal */
+}
+
+/* Efeito de hover para links na navegação dentro do cabeçalho */
+header nav ul li a:hover {
+    text-decoration: underline;
+    /* Sublinha os links ao passar o mouse */
+}
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #808080;
+    /* Cor de fundo do rodapé */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    padding: 20px;
+    /* Padding interno do rodapé */
+    position: relative;
+    /* Garante que o rodapé seja o pai com position relative */
+    z-index: 0;
+    /* Garante que o rodapé esteja abaixo da div direita */
+}
+
+footer p {
+    color: white;
+    /* Cor do texto */
+}
+
+/* Estilos para links no rodapé */
+footer a:link,
+footer a:visited {
+    color: lightblue !important;
+    /* Cor dos links no rodapé */
+}
+
+/* Estilos para imagens */
+img {
+    display: block;
+    /* Exibe as imagens como blocos */
+    margin: auto;
+    /* Centraliza as imagens */
+    margin-top: 40px;
+    /* Margem superior */
+    margin-bottom: 40px;
+    /* Margem inferior */
+}
+
+/* Estilos para listas dentro do conteúdo principal */
+main ul li {
+    line-height: 1.5em;
+    /* Altura da linha */
+}
+
+/* Estilos para parágrafos dentro do conteúdo principal */
+main p {
+    line-height: 1.5em;
+    /* Altura da linha */
+    text-align: justify;
+    /* Justifica o texto */
+}
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+.esquerda,
+.direita {
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.meio {
+    width: 1200px;
+    background-color: white;
+    height: auto;
+    margin: 35px;
+}
+
+/* Primeiro: Texto destacado */
+.destacado {
+    font-weight: bold;
+    padding: 2px;
+}
+
+/* Segundo: Apenas sublinhado */
+.sublinhado {
+    text-decoration: underline;
+}
+
+/* Terceiro: Apenas em itálico */
+.italico {
+    font-style: italic;
+}
+
+/* Quarto: Apenas riscado */
+.riscado {
+    text-decoration: line-through;
+}
+
+.textok {
+
+    color: white;
+    /* Cor do texto */
+    font-size: 20px;
+    /* Tamanho da fonte */
+}
+
