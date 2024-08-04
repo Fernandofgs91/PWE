@@ -226,4 +226,11 @@ main p {
     font-size: 20px;
     /* Tamanho da fonte */
 }
-
+/* Remove o sublinhado dos links */
+        a {
+            text-decoration: none;
+        }
+        /* Adiciona sublinhado ao passar o mouse */
+        a:hover {
+            text-decoration: underline;
+        }
