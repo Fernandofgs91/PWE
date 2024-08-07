@@ -151,6 +151,8 @@ img {
     /* Margem superior */
     margin-bottom: 40px;
     /* Margem inferior */
+    width: 350px;
+    /* Tamanho da imagem */
 }
 
 /* Estilos para listas dentro do conteúdo principal */
