@@ -204,6 +204,8 @@ main p {
 .destacado {
     font-weight: bold;
     /* Texto em negrito */
+    font-size: 1.2em;  
+    /* Aumenta o tamanho da fonte */
     padding: 2px;
     /* Padding interno */
 }
