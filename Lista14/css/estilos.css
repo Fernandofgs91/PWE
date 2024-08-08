@@ -234,14 +234,13 @@ main p {
     /* Tamanho da fonte */
 }
 /* Remove o sublinhado dos links */
-nav ul li a {
+a {
     text-decoration: none;
     /* Remove sublinhado */
 }
 
 /* Adiciona sublinhado ao passar o mouse */
-nav ul li a:hover {
+a:hover {
     text-decoration: underline;
     /* Adiciona sublinhado */
 }
-
