@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu com Imagens e Nomes</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+
+
+/* Define estilos para todos os elementos do documento */
+* {
+    margin: 0; /* Define margem zero para todos os elementos, removendo o espaçamento padrão */
+    padding: 0; /* Define padding zero para todos os elementos, removendo o preenchimento padrão */
+}
+
+/* Estilos para listas não ordenadas (ul) */
+ul {
+    list-style: none; /* Remove os marcadores padrão dos itens da lista */
+    padding-left: 0; /* Remove o padding à esquerda da lista, que é padrão */
+    background-color: black; /* Define a cor de fundo da lista como preta */
+    text-align: center; /* Centraliza o texto e os itens dentro da lista */
+    margin: 0 auto; /* Centraliza a lista horizontalmente na página */
+}
+
+/* Estilos para itens de lista (li) */
+li {
+    display: inline-block; /* Faz com que os itens de lista sejam exibidos em linha (horizontais) */
+}
+
+/* Estilos para links (a) */
+a:link, a:visited {
+    color: white; /* Define a cor do texto dos links como branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: inline-block; /* Faz com que os links sejam exibidos em linha (horizontais) */
+    font-family: "Oswald", sans-serif; /* Define a fonte dos links como "Oswald", com uma fonte genérica sans-serif como fallback */
+    padding: 10px; /* Adiciona 10 pixels de padding ao redor do texto dos links */
+    padding-top: 50px; /* Adiciona 50 pixels de padding na parte superior do texto dos links */
+}
+
+/* Estilos para o menu de opções */
+.opcaoMenu {
+    width: 100px; /* Define a largura de cada item de menu para 100 pixels */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-position: center 10px; /* Posiciona a imagem de fundo no centro horizontal e a 10 pixels do topo vertical */
+    text-align: center; /* Centraliza o texto dentro do item de menu */
+    filter: grayscale(100%); /* Aplica o filtro de escala de cinza (preto e branco) */
+    transition: filter 0.3s ease; /* Adiciona uma transição suave ao filtro */
+}
+
+.opcaoMenu:hover {
+    filter: grayscale(0%); /* Remove o filtro de escala de cinza ao passar o mouse */
+}
+
+/* Estilos específicos para o ícone do Facebook */
+.opcaoMenuFacebook {
+    background-image: url('imagens/face.png'); /* Define a imagem de fundo original */
+}
+
+/* Estilos específicos para o ícone do Instagram */
+.opcaoMenuInstagram {
+    background-image: url('imagens/insta.png'); /* Define a imagem de fundo original */
+}
+
+/* Estilos específicos para o ícone do Maps */
+.opcaoMenuMaps {
+    background-image: url('imagens/maps.png'); /* Define a imagem de fundo original */
+}
+
+/* Estilos específicos para o ícone do Twitter */
+.opcaoMenutwitter {
+    background-image: url('imagens/twitter.png'); /* Define a imagem de fundo original */
+}
+
+/* Estilos específicos para o ícone do YouTube */
+.opcaoMenuYoutube {
+    background-image: url('imagens/youtube.png'); /* Define a imagem de fundo original */
+}
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#" class="opcaoMenu opcaoMenuFacebook">Facebook</a></li>
+            <li><a href="#" class="opcaoMenu opcaoMenuInstagram">Instagram</a></li>
+            <li><a href="#" class="opcaoMenu opcaoMenuMaps">Maps</a></li>
+            <li><a href="#" class="opcaoMenu opcaoMenutwitter">Twitter</a></li>
+            <li><a href="#" class="opcaoMenu opcaoMenuYoutube">YouTube</a></li>
+        </ul>
+    </body>
+</html>
