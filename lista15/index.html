@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral</title>
+    <style>
+        /* Importa a fonte 'Anton' do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        /* Aplica box-sizing para incluir padding e bordas no tamanho total dos elementos e remove margens e padding padrão */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Define a fonte padrão para todo o corpo da página */
+        body {
+            font-family: 'Anton', sans-serif;
+        }
+
+        /* Estiliza o menu fixo na lateral esquerda da página */
+        .menu {
+            position: fixed;
+            /* Fixa o menu na lateral, visível ao rolar a página */
+            top: 150px;
+            /* Posiciona o menu 150px abaixo do topo */
+            left: 0;
+            /* Alinha o menu à esquerda */
+            width: 100px;
+            /* Define a largura do menu */
+            margin-left: 5px;
+        }
+
+        /* Remove marcadores de lista e margens/paddings padrão */
+        .menu ul {
+            list-style-type: none;
+            margin-left: 0px;
+            padding: 0px;
+        }
+
+        /* Estiliza os itens da lista do menu */
+        .menu li {
+            background-color: #3498db;
+            /* Cor de fundo azul */
+            margin-bottom: 5px;
+            /* Espaçamento inferior entre itens */
+            padding: 10px;
+            /* Espaçamento interno dos itens */
+            color: black;
+            /* Cor do texto */
+            transform: translateX(-85px);
+            /* Move o item 85px para a esquerda, ocultando parcialmente */
+            font-size: 16px;
+            /* Define o tamanho da fonte dos links como 16px */
+            text-align: right;
+            /* Alinha o texto dentro do link à direita */
+            transition: all 1s;
+            /* Anima mudanças de propriedades ao longo de 1 segundo */
+            cursor: pointer;
+            /* Cursor de mãozinha ao passar o mouse */
+            border-right: 10px solid black;
+            /* Borda direita preta de 10px */
+            border-radius: 0 5px 5px 0;
+            /* Arredonda os cantos à direita */
+        }
+
+        /* Remove a margem esquerda quando o item for hover */
+        .menu li:hover {
+            transform: translateX(-10px);
+        }
+      
+        /* Específica a cor de fundo para o segundo item do menu */
+        .menu li:nth-child(2) {
+            background-color: #e74c3c;
+            /* Cor vermelha */
+        }
+
+        /* Específica a cor de fundo para o terceiro item do menu */
+        .menu li:nth-child(3) {
+            background-color: #2ecc71;
+            /* Cor verde */
+        }
+
+        /* Específica a cor de fundo para o quarto item do menu */
+        .menu li:nth-child(4) {
+            background-color: #f1c40f;
+            /* Cor amarela */
+        }
+
+        /* Específica a cor de fundo para o quinto item do menu */
+        .menu li:nth-child(5) {
+            background-color: #9b59b6;
+            /* Cor roxa */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="menu">
+            <ul>
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+                <li>Opção 5</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>
