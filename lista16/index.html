@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Zera margens e padding padrão de todos os elementos, e define box-sizing para border-box */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Define um espaçamento inferior entre as sections */
+        section {
+            margin-bottom: 20px;
+            width: 1600px;
+        }
+
+        .secti1 {
+            background-color: #f0f0f0;
+        }
+
+        /* Estilização do corpo da página */
+        body {
+            margin: 0;
+            font-family: 'Roboto', Verdana;
+            line-height: 1.4em;
+            background-color: white;
+        }
+
+        /* Estiliza o menu de navegação */
+        ul {
+            background-color: black;
+            list-style: none;
+            text-align: right;
+            padding: 15px;
+            margin: 0;
+        }
+
+        /* Exibe os itens do menu de forma inline */
+        ul li {
+            display: inline;
+            font-size: 14px;
+        }
+
+        /* Estiliza os links do menu */
+        ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 25px;
+            transition: all 0.4s;
+            background-position: -80px 17px;
+        }
+
+        /* Efeito hover nos links */
+        ul li a:hover {
+            color: black;
+            background-color: white;
+            padding-left: 50px;
+            background-repeat: no-repeat;
+            background-position: 10px 17px;
+            background-size: 30px 30px;
+        }
+
+        /* Imagens de fundo para cada item do menu, ao passar o mouse */
+        ul li:nth-child(1) a:hover {
+            background-image: url('../imagens/html5.png');
+        }
+
+        ul li:nth-child(2) a:hover {
+            background-image: url('../imagens/css3.png');
+        }
+
+        ul li:nth-child(3) a:hover {
+            background-image: url('../imagens/javascript.png');
+        }
+
+        /* Centraliza o conteúdo do header */
+        header {
+            text-align: center;
+        }
+
+        /* Estiliza o título no header */
+        header h1 {
+            font-size: 40px;
+            margin-top: 60px;
+            transition: all 0.5s;
+        }
+
+        /* Div pai para centralizar o conteúdo */
+        .div-pai {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            margin: 0 auto;
+            margin-top: 20px; 
+        }
+
+        /* Estiliza cada div interna */
+        .div-pai div {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            margin-top: 20px; 
+        }
+
+        /* Centraliza a imagem dentro da div */
+        .div-pai img {
+            display: block;
+            margin: 0 auto 10px auto;
+            margin-top: 20px; 
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+        }
+
+        .image2 {
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .text2 {
+            flex: 2;
+            text-align: justify;
+        }
+
+        .segundo {
+            display: flex;
+            width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        /* Estiliza a coluna da imagem */
+        .imagem-col {
+            width: 400px;
+            /* Aumentei a largura em 200px */
+            padding: 10px;
+        }
+
+        /* Estiliza a coluna dos parágrafos */
+        .paragrafos-col {
+            flex: 1;
+            padding: 10px;
+            text-align: justify;
+            line-height: 1, 5;
+            /* Define o espaçamento entre linhas */
+
+        }
+
+        /* Estiliza a imagem */
+        .imagem-col img {
+            width: 100%;
+        }
+
+        /* Estiliza o título principal */
+        .title {
+            font-size: 35px;
+            font-weight: bold;
+            color: #000000;
+            margin: 0;
+            text-align: center;
+            line-height: 1.2;
+            margin-top: 20px; 
+        }
+
+        /* Estiliza o subtítulo */
+        .subtitle {
+            font-weight: bold;
+            color: #ff0000;
+            margin: 0;
+            text-align: center;
+            line-height: 1.3;
+          
+        }
+        footer {
+	background-color:black;
+	padding:40px;
+	text-align:center;
+	color:white;
+	font-size:12px;
+}
+
+.autura{
+
+    height: 100px;;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="imagens/html5.png">HTML5</a></li>
+                <li><a href="imagens/css3.png">CSS</a></li>
+                <li><a href="imagens/javascript.png">JAVASCRIPT</a></li>
+            </ul>
+        </nav>
+        <!-- Imagem do topo -->
+        <img src="imagens/topoPC.jpg" alt="" width="100%">
+    </header>
+
+    <section class="autura">
+        <!-- Título e subtítulo da página -->
+        <h1 class="title">Web Design na Prática</h1>
+        <h2 class="subtitle">HTML5, CSS3 e javascript</h2>
+    </section>
+
+    <section class="secti1">
+        <!-- Div pai que contém os elementos centrais -->
+        <div class="div-pai">
+            <div>
+                <!-- Conteúdo de cada bloco -->
+                <img src="imagens/html5.png" alt="Imagem" width="50px" />
+                <h1 style="color:green;">HTML5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi
+                    excepturi velit voluptate sapiente mollitia perspiciatis, repudiandae, quis aperiam, facere omnis.
+                    Voluptates ab aperiam, laborum accusantium quis quaerat at dicta.</p>
+            </div>
+            <div>
+                <img src="imagens/css3.png" alt="Imagem" width="50px" />
+                <h1 style="color:green;">CSS3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi
+                    excepturi velit voluptate sapiente mollitia perspiciatis, repudiandae, quis aperiam, facere omnis.
+                    Voluptates ab aperiam, laborum accusantium quis quaerat at dicta.</p>
+            </div>
+            <div>
+                <img src="imagens/javascript.png" alt="Imagem" width="50px" />
+                <h1 style="color:green;">JAVASCRIPT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nisi
+                    excepturi velit voluptate sapiente mollitia perspiciatis, repudiandae, quis aperiam, facere omnis.
+                    Voluptates ab aperiam, laborum accusantium quis quaerat at dicta.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="segundo">
+            <div class="imagem-col">
+                <img src="imagens/figure1.jpg" alt="Descrição da imagem">
+            </div>
+            <div class="paragrafos-col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="segundo">
+          
+            <div class="paragrafos-col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+            </div>
+            <div class="imagem-col">
+                <img src="imagens/figure2.jpg" alt="Descrição da imagem">
+            </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="segundo">
+            <div class="imagem-col">
+                <img src="imagens/figure1.jpg" alt="Descrição da imagem">
+            </div>
+            <div class="paragrafos-col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ad error aliquid, culpa iusto
+                    repudiandae suscipit vero velit necessitatibus repellat cupiditate minima facilis a expedita
+                    inventore, earum eius natus ipsum!
+                    Modi quos vero pariatur dolorum excepturi numquam dignissimos beatae eligendi dolorem temporibus
+                    commodi, aliquam quae perspiciatis adipisci consequatur earum minus officia ducimus? Consequuntur
+                    eligendi iste hic quo! Delectus, accusantium facilis!</p>
+            </div>
+        </div>
+        </div>
+    </section>
+<footer>
+    <p>Todos Direitos reservados</p>
+</footer>
+</body>
+
+</html>
