@@ -69,16 +69,7 @@ header h2:hover {
 header img {
 	width: 100%;
 }
-table {
-	border-spacing:20px;
-}
-table td {
-	text-align: center;
-}
-table td p {
-	padding:0px;
-	margin:0px;
-}
+
 main section {
 	padding: 30px;
 }
