@@ -13,11 +13,6 @@ body {
 
 }
 
- section {
-            margin-bottom: 20px;
-            width: 1600px;
-	    width: 100%; 
-        }
 /* Estilos para o cabeçalho */
 header {
     text-align: right;
@@ -179,7 +174,7 @@ main p {
 .container {
     display: flex;
     /* Define layout flexível para o contêiner */
-	 justify-content: space-between;
+ justify-content: space-between;
 
 }
 
