@@ -12,6 +12,11 @@ body {
     /* Define a direção dos elementos flexíveis como coluna */
 }
 
+ section {
+            margin-bottom: 20px;
+            width: 1600px;
+	    width: 100%; 
+        }
 /* Estilos para o cabeçalho */
 header {
     text-align: right;
