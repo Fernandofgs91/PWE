@@ -9,8 +9,6 @@ body {
     display: flex;
     /* Define o layout do corpo como flexível para centralizar o contêiner */
     flex-direction: column;
-    /* Define a direção dos elementos flexíveis como coluna */
-
 }
 
 /* Estilos para o cabeçalho */
@@ -37,6 +35,7 @@ header h1 {
     /* Cor de fundo */
 }
 
+
 /* Estilos específicos para h2 dentro do cabeçalho */
 header h2 {
     color: white;
@@ -46,6 +45,11 @@ header h2 {
     background-color: gray;
     /* Cor de fundo */
 }
+
+
+    
+    /* Transforma o texto para maiúsculas ao passar o mouse */
+
 
 /* Estilos para h2 dentro do conteúdo principal */
 main h2 {
@@ -83,6 +87,7 @@ nav ul li {
     /* Centraliza o texto */
 }
 
+
 /* Estilos específicos para a navegação dentro do cabeçalho */
 header nav ul {
     margin: 0px;
@@ -115,6 +120,8 @@ header nav ul li a:hover {
     text-decoration: underline;
     /* Sublinha os links ao passar o mouse */
 }
+
+
 
 /* Estilos para o rodapé */
 footer {
@@ -152,8 +159,6 @@ img {
     /* Margem superior */
     margin-bottom: 40px;
     /* Margem inferior */
-    width: 500px;
-    /* Tamanho da imagem */
 }
 
 /* Estilos para listas dentro do conteúdo principal */
@@ -170,81 +175,71 @@ main p {
     /* Justifica o texto */
 }
 
-/* Estilos para o contêiner principal */
-.container {
-    display: flex;
-    /* Define layout flexível para o contêiner */
- justify-content: space-between;
 
+header, footer, .container {
+    width: 100%;
 }
 
-/* Estilos para as colunas esquerda e direita */
+header h1, header h2, footer p {
+    margin: 0;
+    padding: 15px;
+}
+
+
+.container {
+    display: flex;
+  
+}
+
 .esquerda,
 .direita {
     width: 200px;
-    /* Define largura fixa */
     background-color: black;
-    /* Cor de fundo */
     color: white;
-    /* Cor do texto */
     padding: 10px;
-    /* Padding interno */
-	
 }
 
-/* Estilos para a coluna do meio */
 .meio {
     width: 1200px;
-    /* Define largura fixa */
     background-color: white;
-    /* Cor de fundo */
     height: auto;
-    /* Altura automática */
     margin: 35px;
-    /* Margem ao redor */
 }
 
-/* Estilos para texto destacado */
+/* Primeiro: Texto destacado */
 .destacado {
     font-weight: bold;
-    /* Texto em negrito */
-      padding: 2px;
-    /* Padding interno */
+    padding: 2px;
 }
 
-/* Estilos para texto sublinhado */
+/* Segundo: Apenas sublinhado */
 .sublinhado {
     text-decoration: underline;
-    /* Texto sublinhado */
 }
 
-/* Estilos para texto em itálico */
+/* Terceiro: Apenas em itálico */
 .italico {
     font-style: italic;
-    /* Texto em itálico */
 }
 
-/* Estilos para texto riscado */
+/* Quarto: Apenas riscado */
 .riscado {
     text-decoration: line-through;
-    /* Texto riscado */
 }
 
-/* Estilos para texto com classe textok */
 .textok {
+
     color: white;
     /* Cor do texto */
     font-size: 20px;
     /* Tamanho da fonte */
 }
-/* Remove o sublinhado dos links */
-a {
-    text-decoration: none;
-    /* Remove sublinhado */
-}
 
+ /* Remove o sublinhado dos links */
+ a li  footer {
+    text-decoration: none;
+}
 /* Adiciona sublinhado ao passar o mouse */
-a:hover {
+a:hover li footer {
     text-decoration: underline;
-    /* Adiciona sublinhado */
 }
