@@ -10,6 +10,7 @@ body {
     /* Define o layout do corpo como flexível para centralizar o contêiner */
     flex-direction: column;
     /* Define a direção dos elementos flexíveis como coluna */
+ width: 100%; 
 }
 
  section {
@@ -191,6 +192,7 @@ main p {
     /* Cor do texto */
     padding: 10px;
     /* Padding interno */
+	 width: 100%; 
 }
 
 /* Estilos para a coluna do meio */
