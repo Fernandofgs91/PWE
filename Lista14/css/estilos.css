@@ -179,6 +179,8 @@ main p {
 .container {
     display: flex;
     /* Define layout flexível para o contêiner */
+	 justify-content: space-between;
+
 }
 
 /* Estilos para as colunas esquerda e direita */
@@ -192,7 +194,7 @@ main p {
     /* Cor do texto */
     padding: 10px;
     /* Padding interno */
-	 width: 100%; 
+	
 }
 
 /* Estilos para a coluna do meio */
