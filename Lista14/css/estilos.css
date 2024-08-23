@@ -45,11 +45,7 @@ header h2 {
     background-color: gray;
     /* Cor de fundo */
 }
-
-
-    
-    /* Transforma o texto para maiúsculas ao passar o mouse */
-
+ 
 
 /* Estilos para h2 dentro do conteúdo principal */
 main h2 {
@@ -188,6 +184,7 @@ header h1, header h2, footer p {
 
 .container {
     display: flex;
+    justify-content: space-between;
   
 }
 
