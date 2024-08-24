@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.container > div {
+    border: 5px solid pink;
+
+    width: 100%;
+}

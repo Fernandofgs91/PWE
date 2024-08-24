@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, ;
+            background-color: black;
+            width: 1200px;
+            margin: auto;
+            padding: 50px;
+            width: 100%; /* Ajustado para 100% da largura da tela */
+
+        }
+
+        main section {
+            background-color: lightgray;
+            width: 1200px;
+            margin: auto;
+            padding: 50px;
+        }
+
+
+
+
+
+        main section h1 {
+
+            font-size: arial;
+            text-transform: uppercase;
+        }
+
+
+        main section p {
+
+
+            margin: 20px 0px;
+        }
+
+        .destaque {
+            font-weight: bold;
+            font-size: 24px;
+
+
+        }
+
+
+        main section button {
+
+
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        main section button:hover {
+            background-color: orangered;
+
+        }
+
+        .butazul {
+            background-color: blue;
+        }
+
+        .butpreto {
+            background-color: black;
+        }
+
+        main section button:hover {
+            background-color: orangered;
+        }
+
+        .section2 {
+            background-color: white;
+
+        }
+
+
+        .section3 {
+
+            background-color: gray;
+        }
+
+        .container {
+
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .container>div {
+
+
+            width: 100%;
+        }
+
+        .serviço img {
+
+            width: 90%;
+        }
+
+
+        section:nth-child(odd) {
+            background-color: rgba(221, 221, 221, 0.956);
+        }
+
+        section:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .centralized-container {
+            display: flex;
+            flex-direction: row;
+            /* Coloca os itens em uma coluna */
+            justify-content: center;
+            /* Centraliza verticalmente */
+            align-items: center;
+            /* Centraliza horizontalmente */
+            gap: 20px;
+
+        }
+
+        .hh1 {
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .pp {
+            text-align: justify;
+
+            /* Ajuste conforme necessário */
+        }
+
+        footer {
+            background-color: black;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        nav {
+            background-color: rgb(10, 10, 109); /* Fundo azul */
+            width: 100%; /* Ocupa 100% da largura da tela */
+            padding: 10px 0;
+            position: fixed; /* Fixa o menu no topo */
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+        }
+
+        nav ul {
+            list-style-type: none; /* Remove marcadores de lista */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Alinha os itens em linha */
+            justify-content: center; /* Centraliza os itens */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Espaçamento entre os itens do menu */
+        }
+
+        nav ul li a {
+            color: white; /* Cor do texto */
+            text-decoration: none; /* Remove o sublinhado dos links */
+            font-size: 16px; /* Tamanho da fonte */
+            font-weight: bold; /* Fonte em negrito */
+            padding: 10px 15px; /* Espaçamento interno dos links */
+            display: block; /* Faz com que o link ocupe toda a área do item da lista */
+        }
+
+        nav ul li a:hover {
+            cursor: pointer; /* Exibe a mãozinha ao passar o mouse */
+            background-color: rgb(10, 10, 109); /* Cor de fundo ao passar o mouse */
+            border-radius: 5px; /* Arredondar os cantos do fundo ao passar o mouse */
+        }
+
+        main {
+            margin-top: 60px; /* Ajusta a margem superior para evitar sobreposição com o menu fixo */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <ul>
+                <li><a href="#">UBER</a></li>
+                <li><a href="#">DIRIJA CONOSCO</a></li>
+                <li><a href="#">PLANOS</a></li>
+                <li><a href="#">SOBRE NÓS</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href="#">CADASTRE-SE</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </nav>
+        
+    </head>
+ 
+    <main>
+        <img src="img/topo.png" alt="" width="110%">
+        <section>
+
+            <h1>Uber</h1>
+
+            <p class="destaque">A plataforma de aposentadoria com o maior
+                número de
+                benefícios do Brasil</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, doloremque obcaecati at, officia repellendus
+                quaerat, harum optio magni illum iste laborum delectus quasi
+                id molestias nisi est culpa voluptas repudiandae.
+                Quae beatae distinctio sapiente. Cumque, consequuntur
+                itaque? Quae fugit doloremque labore corrupti velit
+                reiciendis reprehenderit assumenda magni, nobis minus
+                soluta, autem excepturi qui quam! Reprehenderit debitis nemo
+                dicta. Quo, deleniti?
+                Ducimus, rerum odio quas ut dolorem, libero est, fugiat quod
+                ipsa inventore repellendus quia. Tempora quod ea nemo et quo
+                accusantium voluptatem explicabo repudiandae quas, veniam,
+                rem molestias totam dignissimos.</p>
+            <button class="butpreto">
+                Conheça +
+            </button>
+
+        </section>
+        <section class="section2">
+            <h1>Compromissos da UBER</h1>
+            <img src="img/logoUber.png" width="30px" alt>
+            <img src="img/logoBrasil.png" width="30px" alt>
+            <img src="img/logoEmprego.png" width="30px" alt>
+            <p class="destaque">Segurança</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis cumque dicta odio deleniti aut rerum tenetur
+                repudiandae veniam reprehenderit dolores omnis quis numquam,
+                neque sit. Enim suscipit sunt eum nam!
+                Adipisci, incidunt nam voluptatem nostrum commodi quae
+                impedit omnis dolorem iure, quas repellendus rerum minima
+                recusandae iste repudiandae aliquid nihil illum fugit ab
+                repellat magni sit tempora. Nam, sapiente molestiae.</p>
+            <p class="destaque"> Transparência</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                temporibus unde voluptatum aspernatur perferendis, placeat
+                culpa inventore doloremque? Ad voluptas totam impedit unde
+                laudantium molestias atque itaque cum sapiente consequatur.
+                Saepe totam eaque aut labore, et quis? Impedit ipsum vero
+                itaque id voluptatum animi, quaerat nobis nam nostrum odio
+                tempora magni exercitationem natus deserunt veniam
+                doloribus. Provident molestiae itaque qui.
+                Libero repudiandae dicta, laudantium neque, vitae, numquam
+                quos maiores cupiditate saepe explicabo itaque. Nisi,
+                aspernatur! Officiis enim similique, incidunt eum
+                exercitationem qui, illo, quae nihil optio rerum aliquam
+                tenetur atque!</p>
+            <button class="butazul">
+                Conheça +
+            </button>
+        </section>
+
+        <section class="section3">
+
+            <div class="centralized-container">
+                <div>
+                    <img src="img/foto01.png" width="450px" alt>
+                    <p class="pp">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Incidunt at mollitia optio. Qui sint eum itaque
+                        porro
+                        possimus maxime enim nesciunt vel, commodi iste
+                        saepe
+                        nam natus dicta provident corporis.</p>
+                    <center>
+                        <button class="butpreto">
+                            Veja +
+                        </button>
+                    </center>
+                </div>
+                <div>
+                    <img src="img/foto02.png" width="450px" alt>
+
+                    <p class="<p></p>">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Incidunt at mollitia optio. Qui sint eum itaque
+                        porro
+                        possimus maxime enim nesciunt vel, commodi iste
+                        saepe
+                        nam natus dicta provident corporis.</p>
+                    <center>
+                        <button class="butpreto">
+                            Veja +
+                        </button>
+                    </center>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="centralized-container">
+                <div>
+
+                    <h1 class="hh1">Quem somos</h1>
+                    <p class="pp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsum sed maxime
+                        natus modi necessitatibus vero autem quaerat ipsa? Veritatis aliquid facere impedit possimus
+                        quae nam fugit voluptas commodi atque!
+
+                    </p>
+                    <center>
+                        <button class="butazul">
+                            Conheça +
+                        </button>
+                    </center>
+                </div>
+                <div>
+
+
+                    <h1 class="hh1">Quem somos</h1>
+                    <p class="pp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsum sed maxime
+                        natus modi necessitatibus vero autem quaerat ipsa? Veritatis aliquid facere impedit possimus
+                        quae nam fugit voluptas commodi atque!
+
+                    </p>
+                    <center>
+                        <button class="butazul">
+                            Conheça +
+                        </button>
+                    </center>
+                </div>
+                <div>
+
+                    <h1 class="hh1">Quem somos</h1>
+                    <p class="pp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ipsum sed maxime
+                        natus modi necessitatibus vero autem quaerat ipsa? Veritatis aliquid facere impedit possimus
+                        quae nam fugit voluptas commodi atque!
+
+                    </p>
+                    <center>
+                        <button class="butazul">
+                            Conheça +
+                        </button>
+                    </center>
+
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <p class="destaque">Movidos pela paixão de dirigir.</p>
+            <p class="pp"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure blanditiis numquam fugiat
+                necessitatibus accusamus, vitae corporis incidunt nam eos, porro odio! Nihil tenetur aliquam enim
+                sapiente nisi? Et, neque.
+                Recusandae repellat ea at, porro in, quis dolorem repudiandae sequi veritatis numquam voluptatum itaque
+                eligendi adipisci mollitia. Laborum culpa minus molestias aliquid id necessitatibus nostrum quidem vero
+                officia, ab ipsa.</p>
+
+            <button class="butpreto">
+                Se inscreva
+            </button>&nbsp;<button class="butazul">
+                Leia os termos
+            </button>
+
+        </section>
+        <section>
+
+            <div class="centralized-container">
+
+                <div>
+                    <p class="destaque"> Compromisso 1</p>
+                    <p class="pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum aliquam
+                        inventore
+                        excepturi, error beatae placeat iste facilis enim repellat mollitia esse in molestias quos quae
+                        cupiditate provident eius totam.</p>
+                    <p class="destaque"> Compromisso 2</p>
+                    <p class="pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum aliquam
+                        inventore
+                        excepturi, error beatae placeat iste facilis enim repellat mollitia esse in molestias quos quae
+                        cupiditate provident eius totam.</p>
+                    <p class="destaque"> Compromisso 3</p>
+                    <p class="pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nostrum aliquam
+                        inventore
+                        excepturi, error beatae placeat iste facilis enim repellat mollitia esse in molestias quos quae
+                        cupiditate provident eius totam.</p>
+                </div>
+                <div>
+
+                    <img src="img/foto03.png" width="450px" walt="">
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p> Todos direitos reservados</p>
+    </footer>
+</body>
+
+</html>
