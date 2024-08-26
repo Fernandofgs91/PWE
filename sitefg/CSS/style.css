@@ -8,23 +8,22 @@
 /* Estilos para o corpo da página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8f5; /* Azul claro suave */
-    color: #333; /* Cor do texto */
+    background-color: #f0f8f5;
+    color: #333;
     line-height: 1.6;
-    cursor: default;
-    padding-top: 60px; /* Adiciona espaçamento no topo para compensar o menu fixo */
+    padding-top: 60px;
 }
 
 /* Estilos para o cabeçalho */
 header {
-    background-color: #1f2a48; /* Azul escuro */
-    color: #fff; /* Texto branco */
+    background-color: #1f2a48;
+    color: #fff;
     padding: 1rem;
-    position: fixed; /* Fixa o cabeçalho na parte superior */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    width: 100%;
+    z-index: 1000;
     text-align: center;
 }
 
@@ -33,7 +32,7 @@ header h1 {
     margin: 0;
 }
 
-/* Estilos para o botão de alternar menu */
+/* Estilos para o botão de alternar menu (ícone de "hamburger") */
 .menu-toggle {
     display: none;
     font-size: 2rem;
@@ -42,12 +41,12 @@ header h1 {
     top: 1rem;
     right: 1rem;
     color: #fff;
-    z-index: 1001; /* Garante que o botão fique acima do menu */
+    z-index: 1001;
 }
 
 /* Estilos para a navegação */
 nav {
-    position: relative; /* Mantém o menu relativo ao cabeçalho */
+    position: relative;
 }
 
 nav ul {
@@ -67,13 +66,57 @@ nav ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    border-radius: 5px; /* Adiciona borda arredondada */
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #3a4a71; /* Azul intermediário */
+    background-color: #3a4a71;
     color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 2rem;
+}
+
+/* Estilos para imagens */
+.photo {
+    width: 100%; /* Ajuste para a imagem ocupar 100% da largura do contêiner */
+    max-width: 300px; /* Limita o tamanho máximo da imagem */
+    border: 2px solid #333;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.photo:hover {
+    border-color: #3a4a71;
+    transform: scale(1.05);
+}
+
+/* Estilos responsivos para categorias */
+.column-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1 1 calc(33% - 2rem); /* Responsividade com Flexbox */
+    margin: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .column {
+        flex: 1 1 calc(50% - 2rem); /* Duas colunas em tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%; /* Uma coluna em dispositivos móveis */
+    }
 }
 
 /* Estilos responsivos para telas menores */
@@ -83,9 +126,9 @@ nav ul li a:hover {
         display: none;
         width: 100%;
         text-align: center;
-        background-color: #1f2a48; /* Cor de fundo do menu */
+        background-color: #1f2a48;
         position: absolute;
-        top: 60px; /* Abaixo do cabeçalho fixo */
+        top: 60px;
         left: 0;
         z-index: 1000;
     }
@@ -103,145 +146,32 @@ nav ul li a:hover {
     }
 }
 
-/* Estilos para o conteúdo principal */
-main {
-    padding: 2rem;
+/* Ajustes para telas maiores */
+@media (min-width: 1024px) {
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin: 0 2rem;
+    }
 }
 
-/* Estilos para seções */
-.intro, .featured, .reviews {
-    margin-bottom: 2rem;
-    text-align: justify;
-}
-
-.column-section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    margin: 1rem;
-    text-align: center;
-}
-
-/* Estilos para imagens */
-.photo {
-    width: 300px;
-    border: 2px solid #333;
-    margin-bottom: 1rem;
-    transition: border-color 0.3s, transform 0.3s;
-}
-
-.photo:hover {
-    border-color: #3a4a71; /* Azul intermediário */
-    transform: scale(1.05);
-}
-
-.zoom-effect {
-    transition: transform 0.3s;
-}
-
-.zoom-effect:hover {
-    transform: scale(1.1);
-}
-
-/* Estilos para categorias */
-.category {
-    margin-bottom: 2rem;
-}
-
-.category h2 {
-    margin-bottom: 1rem;
-    color: #1f2a48; /* Azul escuro */
-}
-
-/* Estilos para grade de filmes */
-.movie-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.movie {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex: 1 1 calc(33% - 1rem);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
-    padding: 30px 20px;
-}
-
-.movie img {
-    width: 60%;
-    height: auto;
-    transition: transform 0.3s;
-    border: 2px solid #ccc;
-}
-
-.movie h3 {
-    margin: 1rem 0;
-    color: #1f2a48; /* Azul escuro */
-}
-
-.movie p {
-    padding: 0 1rem 1rem 1rem;
-    color: #666; /* Cinza claro */
-}
-
-.movie:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: #f9f9f9; /* Cor de fundo ligeiramente diferente */
-}
-
-.movie:hover img {
-    transform: scale(1.1);
-}
-
-/* Estilos para formulário de contato */
+/* Estilos responsivos para o formulário de contato */
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 100%; /* Faz o formulário ocupar 100% da largura disponível */
     padding: 1rem;
-    background-color: #f5f5f5; /* Cinza claro */
+    background-color: #f5f5f5;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #1f2a48; /* Azul escuro */
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #3a4a71;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
 }
 
 /* Estilos para botões de envio e reset */
 button[type="submit"],
 button[type="reset"] {
     display: inline-block;
-    width: 48%;
+    width: 100%; /* Faz os botões ocuparem 100% da largura disponível */
     padding: 0.75rem;
     background-color: #1f2a48;
     color: #fff;
@@ -255,7 +185,7 @@ button[type="reset"] {
 button[type="submit"]:hover,
 button[type="reset"]:hover {
     background-color: #3a4a71;
-    transform: translateY(-2px); /* Levanta o botão */
+    transform: translateY(-2px); /* Eleva o botão quando em hover */
 }
 
 /* Estilos para o rodapé */
@@ -268,13 +198,8 @@ footer {
 }
 
 footer:hover {
-    background-color: #3a4a71; /* Azul intermediário */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    background-color: #3a4a71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos para o mapa */
@@ -291,30 +216,29 @@ footer p {
 }
 
 #map:hover {
-    border-color: #3a4a71; /* Azul intermediário */
+    border-color: #3a4a71;
 }
 
 /* Estilos alternados para seções */
 section {
-    border: 1px solid #ccc; /* Borda cinza clara */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
     margin-bottom: 2rem;
-    transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave */
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 section:nth-child(odd) {
-    background-color: #f0f4f8; /* Azul claro */
+    background-color: #f0f4f8;
 }
 
 section:nth-child(even) {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff;
 }
 
-/* Efeitos entre as seções */
 section:hover {
-    background-color: #e0e7ef; /* Efeito de hover com um azul ainda mais claro */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Aumenta a sombra no hover */
+    background-color: #e0e7ef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .ti {
