@@ -34,3 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Seleciona o elemento com a classe "menu-toggle" e adiciona um ouvinte de evento para cliques
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    // Quando o botão é clicado, seleciona o elemento "ul" dentro de "nav" e alterna a classe "nav-active"
+    document.querySelector('nav ul').classList.toggle('nav-active');
+});
