@@ -394,12 +394,12 @@ section:hover {
     }
 
     .map-container iframe {
-        height: 200px; /* Reduz a altura do mapa para telas pequenas */
+        height: 70%; /* Reduz a altura do mapa para telas pequenas */
         border: 2px solid #ccc; /* Ajusta a borda */
     }
 
     .responsive-img {
-        width: 100%; /* Faz com que as imagens ocupem toda a largura do contêiner */
+        width: 70%; /* Faz com que as imagens ocupem toda a largura do contêiner */
         height: auto; /* Mantém a proporção original da imagem */
     }
 
@@ -408,7 +408,7 @@ section:hover {
         height: auto; /* Mantém a proporção */
     }
 
-    ection {
+    section {
         padding: 1rem; /* Adiciona padding para maior espaçamento interno */
         margin: 1rem 0; /* Adiciona margem vertical entre seções */
         border: 1px solid #ddd; /* Adiciona borda leve */
@@ -461,7 +461,7 @@ section:hover {
     }
 
     .map-container iframe {
-        height: 250px; /* Ajusta a altura para tablets */
+        height: 70%; /* Ajusta a altura para tablets */
         border: 2px solid #aaa; /* Ajusta a borda */
     }
 
@@ -482,7 +482,7 @@ section:hover {
     }
 
     .map-container iframe {
-        height: 300px; /* Mantém a altura padrão para desktops pequenos */
+        height: 70%; /* Mantém a altura padrão para desktops pequenos */
         border: 3px solid #888; /* Ajusta a borda */
     }
 
