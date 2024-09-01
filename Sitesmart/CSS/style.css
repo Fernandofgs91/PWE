@@ -12,7 +12,7 @@ body {
     color: #333; /* Define a cor do texto como cinza escuro */
     line-height: 1.6; /* Define a altura da linha para 1.6, melhorando a legibilidade */
     cursor: default; /* Define o cursor padrão */
-    padding-top: 60px; /* Adiciona um espaçamento superior para compensar o cabeçalho fixo */
+    padding-top: 10px; /* Adiciona um espaçamento superior para compensar o cabeçalho fixo */
 }
 
 /* Estilos para o cabeçalho */
