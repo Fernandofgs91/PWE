@@ -457,7 +457,7 @@ section:hover {
     }
 
     main {
-        margin-top: 40px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
+        margin-top: 10px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
     }
     
 
@@ -538,7 +538,7 @@ section:hover {
     }
     
     main {
-        margin-top: 40px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
+        margin-top: 10px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
     }
     
     .movie {
@@ -578,7 +578,7 @@ section:hover {
     }
 
     main {
-        margin-top: 40px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
+        margin-top: 10px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
     }
     
     .map-container iframe {
