@@ -363,7 +363,7 @@ section:hover {
         padding-top: 50px; /* Ajuste de padding para telas menores */
     }
     main {
-        margin-top: 40px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
+        margin-top: 10px;                    /* Adiciona uma margem superior de 60px para evitar sobreposição com a barra de navegação fixa */
     }
     
 
